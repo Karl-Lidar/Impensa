@@ -26,7 +26,6 @@ struct ExpenseCategoryListView: View {
                 ListViewLinkButton(buttonName: "New category", buttonHeight: 25)
             }
         }
-        .padding()
-        .cornerRadius(25)
+        .listStyle(InsetGroupedListStyle())
     }
 }
