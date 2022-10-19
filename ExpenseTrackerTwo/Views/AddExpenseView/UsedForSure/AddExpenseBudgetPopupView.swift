@@ -48,6 +48,7 @@ struct AddExpenseBudgetPopupView: View {
                             .foregroundColor(Color.white)
                     }
                 }
+                .customShadow()
                 .padding(EdgeInsets(top: 0, leading: 0, bottom: 20, trailing: 0))
             }
         }
