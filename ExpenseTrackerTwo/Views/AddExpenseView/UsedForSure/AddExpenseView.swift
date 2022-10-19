@@ -83,30 +83,6 @@ struct AddExpenseView: View {
         }
         .navigationTitle(Text("Add expense"))
     }
-    
-    //FUNCTIONS
-    private func saveExpense() {
-                    let coreDataManager = CoreDataManager(context: viewContext)
-        //TODO: Fix for
-        
-        var pickedExpenseCategory: ExpenseCategory?
-        var pickedBudgetTable: BudgetTable?
-        
-        //Find the correct ExpenseCategory
-        for category in expenseCategories {
-            if category.name! == selectedCategoryName {
-                pickedExpenseCategory = category
-            }
-        }
-        
-        for budget in budgetTable {
-            if budget.name! == selectedBudgetName {
-                pickedBudgetTable = budget
-            }
-        }
-        
-        coreDataManager.coreDataExpenseManager.createNewExpense(expenseName: expenseName, expenseAmount: Double(amountString)!, expenseCategory: pickedExpenseCategory!, budgetTable: pickedBudgetTable!)
-    }
 }
 
 struct AddExpenseView_Previews: PreviewProvider {
