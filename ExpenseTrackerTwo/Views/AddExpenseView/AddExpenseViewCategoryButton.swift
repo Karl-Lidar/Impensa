@@ -44,7 +44,7 @@ struct AddExpenseViewCategoryButton: View {
         .onTapGesture {
             withAnimation {
                 if selectedCatoryName == category.name! {
-                    selectedCatoryName = ""
+                    selectedCatoryName = "Category"
                 } else {
                     selectedCatoryName = category.name!
                 }

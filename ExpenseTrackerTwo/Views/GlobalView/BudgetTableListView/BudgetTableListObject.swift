@@ -13,22 +13,51 @@ struct BudgetTableListObject: View {
     var budgetTable: BudgetTable
     
     var body: some View {
-        ZStack {
-            if budgetTable.name! == selectedBudgetName {
-                Color(UIColor.systemGray5)
-                    .frame(width: 200, height: 40, alignment: .center)
-                    .cornerRadius(20)
+        
+        GeometryReader { geometry in
+            ZStack {
+                if budgetTable.name! == selectedBudgetName {
+                    Color(UIColor.systemGray5)
+                        .frame(width: 150, height: 25, alignment: .center)
+                        .cornerRadius(20)
+                }
+                
+                HStack {
+                    Spacer()
+                    VStack {
+                        Spacer()
+                Text("\(budgetTable.name!)")
+                    .foregroundColor(Color.black.opacity(0.9))
+                        Spacer()
+                    }
+                    Spacer()
+                }
+             /*
+            Button {
+                if selectedBudgetName != budgetTable.name! {
+                selectedBudgetName = budgetTable.name!
+                } else {
+                    selectedBudgetName = ""
+                }
+            } label: {
+                HStack {
+                    Spacer()
+                Text("\(budgetTable.name!)")
+                    .foregroundColor(Color.black.opacity(0.9))
+                    Spacer()
+                }
             }
-        Button {
+                */
+            }
+        }
+        .onTapGesture {
             if selectedBudgetName != budgetTable.name! {
             selectedBudgetName = budgetTable.name!
             } else {
-                selectedBudgetName = ""
+                selectedBudgetName = "Budget"
             }
-        } label: {
-            Text("\(budgetTable.name!)")
         }
-        }
+       
     }
 }
 
