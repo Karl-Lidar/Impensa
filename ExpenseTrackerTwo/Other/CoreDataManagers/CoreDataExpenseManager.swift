@@ -17,14 +17,14 @@ class CoreDataExpenseManager {
         self.viewContext = context
     }
     
-    func createNewExpense(expenseName: String, expenseAmount: Double, expenseCategory: ExpenseCategory, budgetTable: BudgetTable) {
+    func createNewExpense(expenseName: String, expenseAmount: Double, expenseCategory: ExpenseCategory, budgetTable: BudgetTable, date: Date) {
         
         let expense = Expense(context: viewContext)
         expense.expenseCategory = expenseCategory
         expense.id = UUID()
         expense.name = expenseName
         expense.amount = expenseAmount
-        expense.date = Date()
+        expense.date = date
         expense.budget = budgetTable
         
         saveContext()

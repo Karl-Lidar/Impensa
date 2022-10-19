@@ -15,6 +15,8 @@ struct ExpenseSettingView: View {
     @State var selectedCatoryName: String
     @State var selectedBudgetName: String
     var expense: Expense
+    
+    @State var blurView = false
 
     var body: some View {
        
@@ -23,8 +25,10 @@ struct ExpenseSettingView: View {
                 BackgroundSplashView(multiplier: 1.3, color: StringColorConverter().colorFor(colorName: expense.expenseCategory!.colorName!))
             VStack {
                 Spacer()
-                AddExpenseTextInputView(currentAddExpensePage: $currentPage, expenseName: $expenseName, amountString: $amountString, withSaveButton: false)
+                /*
+                AddExpenseTextInputView(currentAddExpensePage: $currentPage, expenseName: $expenseName, amountString: $amountString, withSaveButton: false, showCategories: .constant(false), blurView: $blurView)
                     .frame(width: geometry.size.width, height: 150)
+                 */
                     
                     
                 NavigationLink(destination: ExpenseSettingCategoryView(selectedCatoryName: $selectedCatoryName)
