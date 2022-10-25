@@ -20,6 +20,16 @@ class CoreDataExpenseCategoryManager {
         self.viewContext = context
     }
     
+    private func saveContext() {
+        do {
+            try viewContext.save()
+        } catch {
+            let nsError = error as NSError
+            fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
+        }
+    }
+    
+    //GENERATE EXPENSE CATEGORIES
     func generateExpenseCategories() {
         
         for element in 0..<categoryNames.count {
@@ -32,15 +42,13 @@ class CoreDataExpenseCategoryManager {
         }
     }
     
-    private func saveContext() {
-        do {
-            try viewContext.save()
-        } catch {
-            let nsError = error as NSError
-            fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
-        }
+    //DELETE CATEGORY
+    func delete(category: ExpenseCategory) {
+        viewContext.delete(category)
+        saveContext()
     }
     
+    //CREATE NEW EXPENSE CATEGORY
     func createNewExpenseCategory(name: String, color: String) {
         let expenseCategory = ExpenseCategory(context: viewContext)
         expenseCategory.colorName = color
@@ -49,6 +57,7 @@ class CoreDataExpenseCategoryManager {
         saveContext()
     }
     
+    //UPDATE EXPENSE CATEGORY
     func updateExpenseCategory(expenseCategory: ExpenseCategory, name: String, color: String) {
         
         if expenseCategory.name! != name {

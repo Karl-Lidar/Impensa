@@ -47,6 +47,13 @@
 		BACED7CD290035670061D464 /* AddExpenseTextInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACED7CC290035670061D464 /* AddExpenseTextInputView.swift */; };
 		BACED7CF290040370061D464 /* AddExpenseListTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACED7CE290040370061D464 /* AddExpenseListTextView.swift */; };
 		BACED7D3290044190061D464 /* AddExpenseCalendarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACED7D2290044190061D464 /* AddExpenseCalendarButton.swift */; };
+		BACED7D729066F590061D464 /* AddExpenseDeleteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACED7D629066F590061D464 /* AddExpenseDeleteButton.swift */; };
+		BACED7D9290672700061D464 /* CategorySettingViewDeleteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACED7D8290672700061D464 /* CategorySettingViewDeleteButton.swift */; };
+		BACED7DB29068D010061D464 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACED7DA29068D010061D464 /* TestView.swift */; };
+		BACED7DD29068F990061D464 /* TextViewTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACED7DC29068F990061D464 /* TextViewTwo.swift */; };
+		BACED7DF29068FD30061D464 /* TesterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACED7DE29068FD30061D464 /* TesterView.swift */; };
+		BACED7E1290693AD0061D464 /* BudgetGoalViewCategoryName.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACED7E0290693AD0061D464 /* BudgetGoalViewCategoryName.swift */; };
+		BACED7E32906D1C90061D464 /* BudgetSettingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACED7E22906D1C90061D464 /* BudgetSettingButton.swift */; };
 		BAEC781528E7351B00911088 /* AddBudgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEC781428E7351B00911088 /* AddBudgetView.swift */; };
 		BAEC781728E736E000911088 /* AddBudgetGoal.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEC781628E736E000911088 /* AddBudgetGoal.swift */; };
 		BAEC781E28E852B900911088 /* ExpenseCategoryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEC781D28E852B900911088 /* ExpenseCategoryListView.swift */; };
@@ -133,6 +140,13 @@
 		BACED7CC290035670061D464 /* AddExpenseTextInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExpenseTextInputView.swift; sourceTree = "<group>"; };
 		BACED7CE290040370061D464 /* AddExpenseListTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExpenseListTextView.swift; sourceTree = "<group>"; };
 		BACED7D2290044190061D464 /* AddExpenseCalendarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExpenseCalendarButton.swift; sourceTree = "<group>"; };
+		BACED7D629066F590061D464 /* AddExpenseDeleteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExpenseDeleteButton.swift; sourceTree = "<group>"; };
+		BACED7D8290672700061D464 /* CategorySettingViewDeleteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategorySettingViewDeleteButton.swift; sourceTree = "<group>"; };
+		BACED7DA29068D010061D464 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		BACED7DC29068F990061D464 /* TextViewTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewTwo.swift; sourceTree = "<group>"; };
+		BACED7DE29068FD30061D464 /* TesterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TesterView.swift; sourceTree = "<group>"; };
+		BACED7E0290693AD0061D464 /* BudgetGoalViewCategoryName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetGoalViewCategoryName.swift; sourceTree = "<group>"; };
+		BACED7E22906D1C90061D464 /* BudgetSettingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetSettingButton.swift; sourceTree = "<group>"; };
 		BAEC781428E7351B00911088 /* AddBudgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBudgetView.swift; sourceTree = "<group>"; };
 		BAEC781628E736E000911088 /* AddBudgetGoal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBudgetGoal.swift; sourceTree = "<group>"; };
 		BAEC781D28E852B900911088 /* ExpenseCategoryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseCategoryListView.swift; sourceTree = "<group>"; };
@@ -246,6 +260,7 @@
 		BA87EC7D28C9499500FBDBB8 /* CoreDataFiles */ = {
 			isa = PBXGroup;
 			children = (
+				BAEC782928E87D9700911088 /* CoreDataManagers */,
 				BAFFCDC528D614A300013855 /* ExpenseCategory+CoreDataClass.swift */,
 				BAFFCDC628D614A300013855 /* ExpenseCategory+CoreDataProperties.swift */,
 				BAAD926628D1BB15004D712B /* Expense+CoreDataClass.swift */,
@@ -288,6 +303,7 @@
 				BA87EC7128C93D4100FBDBB8 /* AddExpenseView.swift */,
 				BAEC783928E9860D00911088 /* AddExpenseDataView.swift */,
 				BACED7D2290044190061D464 /* AddExpenseCalendarButton.swift */,
+				BACED7D629066F590061D464 /* AddExpenseDeleteButton.swift */,
 				BACED7CE290040370061D464 /* AddExpenseListTextView.swift */,
 				BACED7CC290035670061D464 /* AddExpenseTextInputView.swift */,
 				BACED7C629001A300061D464 /* AddExpenseDatePicker.swift */,
@@ -336,6 +352,7 @@
 			children = (
 				BAFACDB828DB10B000E0C94F /* CategoriesView.swift */,
 				BA5640FB28DB40C100BEEAFD /* CategorySettingView.swift */,
+				BACED7D8290672700061D464 /* CategorySettingViewDeleteButton.swift */,
 				BA35B2B128E054E100560F64 /* CategoryColorBox.swift */,
 				BA5640FD28DB57E800BEEAFD /* CategorySettingColorButton.swift */,
 			);
@@ -359,10 +376,15 @@
 			isa = PBXGroup;
 			children = (
 				BA87EC7328C9407E00FBDBB8 /* BudgetView.swift */,
+				BACED7DE29068FD30061D464 /* TesterView.swift */,
 				BAEC781428E7351B00911088 /* AddBudgetView.swift */,
+				BACED7DA29068D010061D464 /* TestView.swift */,
+				BACED7DC29068F990061D464 /* TextViewTwo.swift */,
 				BAEC782328E85A1500911088 /* BudgetGoalsListView.swift */,
+				BACED7E22906D1C90061D464 /* BudgetSettingButton.swift */,
 				BAEC781628E736E000911088 /* AddBudgetGoal.swift */,
 				BA87EC7528C9433000FBDBB8 /* BudgetGoalView.swift */,
+				BACED7E0290693AD0061D464 /* BudgetGoalViewCategoryName.swift */,
 			);
 			path = BudgetViews;
 			sourceTree = "<group>";
@@ -384,7 +406,6 @@
 				BAFACDB628DB088700E0C94F /* StringColorConverter.swift */,
 				BA8DBB0728D6188D00BF36F5 /* GlobalExtensions.swift */,
 				BA8DBB0B28D8DD7900BF36F5 /* ExpenseFilterView.swift */,
-				BAEC782928E87D9700911088 /* CoreDataManagers */,
 				BA38E90328CE518100EC1A08 /* BuildHelper.swift */,
 			);
 			path = Other;
@@ -549,6 +570,7 @@
 				BAEC783C28E9E08700911088 /* ExpenseSettingView.swift in Sources */,
 				BA87EC8628C952C100FBDBB8 /* BudgetGoals+CoreDataClass.swift in Sources */,
 				BA1CD4A628FF36E400559D1A /* AddExpenseCategoryPopupView.swift in Sources */,
+				BACED7DF29068FD30061D464 /* TesterView.swift in Sources */,
 				BAEC781528E7351B00911088 /* AddBudgetView.swift in Sources */,
 				BAEC783E28EACA7C00911088 /* ExpenseSettingCategoryView.swift in Sources */,
 				BA35B2B228E054E100560F64 /* CategoryColorBox.swift in Sources */,
@@ -562,10 +584,14 @@
 				BAFFCDC828D614A300013855 /* ExpenseCategory+CoreDataProperties.swift in Sources */,
 				BACED7CB29002E120061D464 /* GlobalCustomModifiers.swift in Sources */,
 				BA5640FC28DB40C100BEEAFD /* CategorySettingView.swift in Sources */,
+				BACED7DB29068D010061D464 /* TestView.swift in Sources */,
 				BA5640FE28DB57E800BEEAFD /* CategorySettingColorButton.swift in Sources */,
+				BACED7E1290693AD0061D464 /* BudgetGoalViewCategoryName.swift in Sources */,
 				BAEC781728E736E000911088 /* AddBudgetGoal.swift in Sources */,
+				BACED7E32906D1C90061D464 /* BudgetSettingButton.swift in Sources */,
 				BACED7C729001A300061D464 /* AddExpenseDatePicker.swift in Sources */,
 				BA87EC4A28C8F97200FBDBB8 /* Persistence.swift in Sources */,
+				BACED7DD29068F990061D464 /* TextViewTwo.swift in Sources */,
 				BA87EC8228C951B900FBDBB8 /* BudgetTable+CoreDataClass.swift in Sources */,
 				BAEC782F28E97EF300911088 /* BudgetTableListView.swift in Sources */,
 				BAEC782228E8582800911088 /* TextFieldView.swift in Sources */,
@@ -573,10 +599,12 @@
 				BA87EC7228C93D4100FBDBB8 /* AddExpenseView.swift in Sources */,
 				BACED7D3290044190061D464 /* AddExpenseCalendarButton.swift in Sources */,
 				BA87EC7428C9407E00FBDBB8 /* BudgetView.swift in Sources */,
+				BACED7D9290672700061D464 /* CategorySettingViewDeleteButton.swift in Sources */,
 				BA87EC4328C8F97200FBDBB8 /* ContentView.swift in Sources */,
 				BAEC784028EACBDD00911088 /* ExpenseSettingBudgetView.swift in Sources */,
 				BAFFCDC428D6134900013855 /* ExpenseInfoView.swift in Sources */,
 				BA1CD4A828FFE00000559D1A /* AddExpenseBudgetPopupView.swift in Sources */,
+				BACED7D729066F590061D464 /* AddExpenseDeleteButton.swift in Sources */,
 				BA87EC4128C8F97200FBDBB8 /* ExpenseTrackerTwoApp.swift in Sources */,
 				BA8DBB0828D6188D00BF36F5 /* GlobalExtensions.swift in Sources */,
 				BAFFCDC728D614A300013855 /* ExpenseCategory+CoreDataClass.swift in Sources */,
