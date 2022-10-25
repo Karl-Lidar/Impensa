@@ -30,6 +30,36 @@ class CoreDataExpenseManager {
         saveContext()
     }
     
+    func deleteExpense(expense: Expense) {
+        viewContext.delete(expense)
+        saveContext()
+    }
+    
+    func updateExpense(expenseName: String, expenseAmount: Double, expenseCategory: ExpenseCategory, budgetTable: BudgetTable, date: Date, expenseToUpdate: Expense) {
+        
+        if expenseName != expenseToUpdate.name! {
+            expenseToUpdate.name = expenseName
+        }
+        
+        if expenseAmount != expenseToUpdate.amount {
+            expenseToUpdate.amount = expenseAmount
+        }
+        
+        if expenseCategory != expenseToUpdate.expenseCategory! {
+            expenseToUpdate.expenseCategory = expenseCategory
+        }
+        
+        if budgetTable != expenseToUpdate.budget! {
+            expenseToUpdate.budget = budgetTable
+        }
+        
+        if date != expenseToUpdate.date! {
+            expenseToUpdate.date = date
+        }
+        
+        saveContext()
+    }
+    
     private func saveContext() {
         do {
             try viewContext.save()

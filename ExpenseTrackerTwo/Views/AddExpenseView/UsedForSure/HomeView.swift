@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct HomeView: View {
+    
+    @State var expenseToDelete = Expense()
+    
     var body: some View {
         GeometryReader { geometry in
             NavigationView {
@@ -18,7 +21,7 @@ struct HomeView: View {
                         .shadow(color: Color.black.opacity(0.1), radius: 5, x: 0, y: 5)
 
                     NavigationLink {
-                        AddExpenseView()
+                        AddExpenseView(addExpenseMode: .Save, expenseToDelete: $expenseToDelete)
                     } label: {
                         ZStack {
                             Color.white

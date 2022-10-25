@@ -22,7 +22,7 @@ struct ExpenseSettingCategoryView: View {
                 Button {
                     self.presentationMode.wrappedValue.dismiss()
                 } label: {
-                    SaveButtonView(color: Color.green)
+                    SaveButtonView(color: Color.green, saveOrUpdate: .Save)
                 }
 
                 Spacer()

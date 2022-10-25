@@ -15,24 +15,18 @@ struct CategorySettingColorButton: View {
     var body: some View {
         withAnimation {
             Button {
-                pickedColor = buttonColor
+                withAnimation {
+                    pickedColor = buttonColor
+                }
+                
             } label: {
-                HStack {
-                    Spacer()
-                    VStack {
-                        Spacer()
-                ZStack {
-                    buttonColor
-                        .frame(width: 50, height: 50)
-                        .cornerRadius(25)
-                }
-                        Spacer()
-                    }
-                    Spacer()
-                }
+                            buttonColor
+                                .frame(width: 50, height: 50)
+                                .cornerRadius(25)
+                                
+            }
         }
-        }
-}
+    }
 }
 
 struct CategorySettingColorButton_Previews: PreviewProvider {

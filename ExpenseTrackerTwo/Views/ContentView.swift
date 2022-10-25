@@ -36,7 +36,7 @@ struct ContentView: View {
                     Text("Budgets")
                 }
             
-            ExpensesView()
+            ExpensesView(filterActive: false, budgetName: "NoName", categoryName: "NoName")
                 .tabItem {
                     Image(systemName: "cart.fill")
                     Text("Expenses")
@@ -48,6 +48,7 @@ struct ContentView: View {
                     Text("Categories")
                 }
         }
+        .accentColor(Color.green.opacity(0.8))
         
          
     }
